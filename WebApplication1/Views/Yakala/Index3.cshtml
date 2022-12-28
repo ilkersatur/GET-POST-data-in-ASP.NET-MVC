@@ -1,0 +1,20 @@
+﻿@model WebApplication1.Models.Urun
+@{
+    ViewBag.Title = "Index3";
+}
+
+<h2>Index3</h2>
+
+@*<form action="~/Yakala/Index3" method="post">*@
+@*<form action="~/Yakala/Index4" method="post">*@
+@*<form action="~/Yakala/Index5" method="post">*@
+<form action="~/Yakala/Index6" method="post">
+    Ürün ID:<input type="text" name="urunID" id="urunID" /> <br />
+    Ürün Adı:<input type="text" name="urunAdi" id="urunID" /><br />
+    Fiyat:<input type="text" name="fiyat" id="urunID" /><br />
+    <input type="submit" value="Gönder" />
+</form>
+
+@Html.TextBoxFor(u=>u.UrunID)
+@Html.TextBoxFor(u=>u.UrunAdi)
+@Html.TextBoxFor(u=>u.Fiyat)

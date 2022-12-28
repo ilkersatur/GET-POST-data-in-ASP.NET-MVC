@@ -1,0 +1,27 @@
+﻿@model WebApplication1.Models.Fatura_VM
+@{
+    ViewBag.Title = "FaturaGoster";
+}
+
+<h2>FaturaGoster</h2>
+@Model.Musteri
+<br />
+@Model.FaturaKesimTarihi
+<br />
+<h3>Fatura Detayları</h3>
+<table>
+    @foreach (var item in Model.FaturaDetay)
+    {
+        <tr>
+            <td>
+                @item.UrunID
+            </td>
+            <td>
+                @item.Adet
+            </td>
+            <td>
+                @item.Fiyat
+            </td>
+        </tr>
+    }
+</table>

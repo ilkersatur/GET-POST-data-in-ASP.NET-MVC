@@ -1,0 +1,11 @@
+﻿@model IEnumerable<WebApplication1.Models.Urun>
+@{
+    ViewBag.Title = "TumUrunler";
+}
+
+<h2>TumUrunler</h2>
+
+@foreach (var urun in Model)
+{
+    @urun.Fiyat @urun.UrunAdi @urun.UrunID
+}

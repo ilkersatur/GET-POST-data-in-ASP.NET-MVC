@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@TempData["veri"]
+
+<form action="~/Yakala/YakalaGET" method="get">
+    Ürün ID:<input type="text" name="urunID" id="urunID"/> <br />
+    Ürün Adı:<input type="text" name="urunAdi" id="urunID"/><br />
+    Fiyat:<input type="text" name="fiyat" id="urunID"/><br />
+    <input type="submit" value="Gönder" />
+</form>
